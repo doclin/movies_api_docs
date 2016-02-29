@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>行政区列表获取接口 &mdash; movies_api_docs 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="movies_api_docs 0.1 documentation" href="index.html" />
+    <link rel="next" title="电影院列表获取接口" href="cinema_list.html" />
+    <link rel="prev" title="电影列表获取接口" href="movie_list.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>行政区列表获取接口<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>获取行政区列表<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>::</dt>
+<dd>GET /district/</dd>
+</dl>
+<p>请求参数说明</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%" />
+<col width="22%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">name</th>
+<th class="head">type</th>
+<th class="head">value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>city_id</td>
+<td>int</td>
+<td>查询城市ID</td>
+</tr>
+<tr class="row-odd"><td>meituan_movie_id</td>
+<td>string</td>
+<td>查询电影美团ID</td>
+</tr>
+<tr class="row-even"><td>nuomi_movie_id</td>
+<td>string</td>
+<td>查询电影糯米ID</td>
+</tr>
+<tr class="row-odd"><td>taobao_movie_id</td>
+<td>string</td>
+<td>查询电影淘宝ID</td>
+</tr>
+</tbody>
+</table>
+<p>查询成功响应信息</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd>Status: 200 OK</dd>
+</dl>
+<dl class="docutils">
+<dt>::</dt>
+<dd><dl class="first docutils">
+<dt>[</dt>
+<dd><p class="first">[],
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;江岸区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;江岸区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;3504-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;jiangqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;东西湖区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;东西湖区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;3908-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;dongxihuqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;洪山区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;洪山区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;3390-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;hongshanqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;汉阳区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;汉阳区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;3494-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;hanyangqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;武昌区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;武昌区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;3437-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;wuchangqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;硚口区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;硚口区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;3394-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;kouqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;江夏区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;江夏区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;6711-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;jiangxiaqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;江汉区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;江汉区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;3357-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;jianghanqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;黄陂区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;黄陂区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;huangpiqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;青山区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;青山区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;qingshanqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;蔡甸区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;蔡甸区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;6710-0&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;caidianqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;新洲区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;新洲区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;xinzhouqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;汉南区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;hannanqu&#8221;</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;district_name&#8221;: &#8220;经济技术开发区&#8221;,
+&#8220;taobao_district_id&#8221;: &#8220;经济技术开发区&#8221;,
+&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
+&#8220;meituan_district_id&#8221;: &#8220;&#8221;</div></blockquote>
+<p class="last">}</p>
+</dd>
+</dl>
+<p class="last">]</p>
+</dd>
+</dl>
+<p>响应参数说明</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="19%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">name</th>
+<th class="head">type</th>
+<th class="head">value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>district_name</td>
+<td>string</td>
+<td>行政区名称</td>
+</tr>
+<tr class="row-odd"><td>meituan_district_id</td>
+<td>string</td>
+<td>美团行政区id</td>
+</tr>
+<tr class="row-even"><td>nuomi_district_id</td>
+<td>string</td>
+<td>糯米行政区id</td>
+</tr>
+<tr class="row-odd"><td>taobao_district_id</td>
+<td>string</td>
+<td>淘宝行政区id</td>
+</tr>
+</tbody>
+</table>
+<p>查询失败响应</p>
+<p>以下所有错误响应的HTTP状态码均为400</p>
+<p>1.city_id格式正确但不存在该ID</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd><dl class="first docutils">
+<dt>{</dt>
+<dd>&#8220;message&#8221;: &#8220;Id dose not exist&#8221;</dd>
+</dl>
+<p class="last">}</p>
+</dd>
+</dl>
+<p>2.请求参数格式错误</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd><dl class="first docutils">
+<dt>{</dt>
+<dd><dl class="first docutils">
+<dt>&#8220;city_id&#8221;: [</dt>
+<dd>&#8220;invalid&#8221;</dd>
+</dl>
+<p class="last">]</p>
+</dd>
+</dl>
+<p class="last">}</p>
+</dd>
+</dl>
+<p>3.其他错误</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd><dl class="first docutils">
+<dt>{</dt>
+<dd>&#8220;message&#8221;: &#8220;Unknown error&#8221;</dd>
+</dl>
+<p class="last">}</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">行政区列表获取接口</a><ul>
+<li><a class="reference internal" href="#id2">获取行政区列表</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="movie_list.html" title="previous chapter">电影列表获取接口</a></li>
+      <li>Next: <a href="cinema_list.html" title="next chapter">电影院列表获取接口</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/district_list.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, lin zehao.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/district_list.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
