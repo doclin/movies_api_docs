@@ -1,41 +1,138 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>场次及票价列表获取接口 &mdash; movies_api_docs 0.1 documentation</title>
-    
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="movies_api_docs 0.1 documentation" href="index.html" />
-    <link rel="prev" title="电影院列表获取接口" href="cinema_list.html" />
-   
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>场次及票价列表获取接口 &mdash; movies_api_docs 0.1 documentation</title>
+  
 
-  </head>
-  <body role="document">  
+  
+  
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="movies_api_docs 0.1 documentation" href="index.html"/>
+        <link rel="prev" title="电影院列表获取接口" href="cinema_list.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> movies_api_docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="basic.html">基本使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="city_list.html">城市列表获取接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="movie_list.html">电影列表获取接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="district_list.html">行政区列表获取接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cinema_list.html">电影院列表获取接口</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">场次及票价列表获取接口</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">获取场次票价列表</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">movies_api_docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>场次及票价列表获取接口</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/price_list.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="id1">
 <h1>场次及票价列表获取接口<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
@@ -46,6 +143,49 @@
 <dd>GET /ticket/</dd>
 </dl>
 <p>请求参数说明</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="20%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">name</th>
+<th class="head">type</th>
+<th class="head">value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>city_id</td>
+<td>int</td>
+<td>查询城市ID</td>
+</tr>
+<tr class="row-odd"><td>meituan_moive_id</td>
+<td>string</td>
+<td>查询电影美团ID</td>
+</tr>
+<tr class="row-even"><td>meituan_cinema_id</td>
+<td>string</td>
+<td>查询电影院美团ID</td>
+</tr>
+<tr class="row-odd"><td>nuomi_movie_id</td>
+<td>string</td>
+<td>查询电影糯米ID</td>
+</tr>
+<tr class="row-even"><td>nuomi_cinema_id</td>
+<td>string</td>
+<td>查询电影院糯米ID</td>
+</tr>
+<tr class="row-odd"><td>taobao_movie_id</td>
+<td>string</td>
+<td>查询电影淘宝ID</td>
+</tr>
+<tr class="row-even"><td>taobao_cinema_id</td>
+<td>string</td>
+<td>查询电影院淘宝ID</td>
+</tr>
+</tbody>
+</table>
 <p>查询成功响应信息</p>
 <dl class="docutils">
 <dt>::</dt>
@@ -55,40 +195,35 @@
 <dt>::</dt>
 <dd><dl class="first docutils">
 <dt>[</dt>
-<dd><p class="first">[],
-{</p>
-<blockquote>
-<div>&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
+<dd>[],
+{
+&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
 &#8220;taobao_now_price&#8221;: &#8220;22&#8221;,
 &#8220;start_time&#8221;: &#8220;10:00&#8221;,
 &#8220;end_time&#8221;: &#8220;11:33&#8221;,
-&#8220;meituan_now_price&#8221;: &#8220;33&#8221;</div></blockquote>
-<p>},
-{</p>
-<blockquote>
-<div>&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
+&#8220;meituan_now_price&#8221;: &#8220;33&#8221;
+},
+{
+&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
 &#8220;taobao_now_price&#8221;: &#8220;22&#8221;,
 &#8220;start_time&#8221;: &#8220;11:00&#8221;,
 &#8220;end_time&#8221;: &#8220;12:33&#8221;,
-&#8220;meituan_now_price&#8221;: &#8220;33&#8221;</div></blockquote>
-<p>},
-{</p>
-<blockquote>
-<div>&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
+&#8220;meituan_now_price&#8221;: &#8220;33&#8221;
+},
+{
+&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
 &#8220;taobao_now_price&#8221;: &#8220;22&#8221;,
 &#8220;start_time&#8221;: &#8220;11:45&#8221;,
 &#8220;end_time&#8221;: &#8220;13:18&#8221;,
-&#8220;meituan_now_price&#8221;: &#8220;33&#8221;</div></blockquote>
-<p>},
-{</p>
-<blockquote>
-<div>&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
+&#8220;meituan_now_price&#8221;: &#8220;33&#8221;
+},
+{
+&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
 &#8220;taobao_now_price&#8221;: &#8220;22&#8221;,
 &#8220;start_time&#8221;: &#8220;12:45&#8221;,
 &#8220;end_time&#8221;: &#8220;14:18&#8221;,
-&#8220;meituan_now_price&#8221;: &#8220;33&#8221;</div></blockquote>
-<p class="last">},</p>
-</dd>
+&#8220;meituan_now_price&#8221;: &#8220;33&#8221;
+}</dd>
 </dl>
 <p class="last">]</p>
 </dd>
@@ -134,100 +269,91 @@
 <p>1.city_id格式正确但不存在该ID</p>
 <dl class="docutils">
 <dt>::</dt>
-<dd><dl class="first docutils">
-<dt>{</dt>
-<dd>&#8220;message&#8221;: &#8220;Id dose not exist&#8221;</dd>
-</dl>
-<p class="last">}</p>
-</dd>
+<dd>{
+&#8220;message&#8221;: &#8220;Id dose not exist&#8221;
+}</dd>
 </dl>
 <p>2.请求参数格式错误</p>
 <dl class="docutils">
 <dt>::</dt>
-<dd><dl class="first docutils">
-<dt>{</dt>
-<dd><dl class="first docutils">
-<dt>&#8220;city_id&#8221;: [</dt>
-<dd>&#8220;invalid&#8221;</dd>
-</dl>
-<p class="last">]</p>
-</dd>
-</dl>
-<p class="last">}</p>
-</dd>
+<dd>{
+&#8220;city_id&#8221;: [&#8220;invalid&#8221;]
+}</dd>
 </dl>
 <p>3.其他错误</p>
 <dl class="docutils">
 <dt>::</dt>
-<dd><dl class="first docutils">
-<dt>{</dt>
-<dd>&#8220;message&#8221;: &#8220;Unknown error&#8221;</dd>
-</dl>
-<p class="last">}</p>
-</dd>
+<dd>{
+&#8220;message&#8221;: &#8220;Unknown error&#8221;
+}</dd>
 </dl>
 </div>
 </div>
 
 
+           </div>
           </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">场次及票价列表获取接口</a><ul>
-<li><a class="reference internal" href="#id2">获取场次票价列表</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="cinema_list.html" title="previous chapter">电影院列表获取接口</a></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/price_list.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="cinema_list.html" class="btn btn-neutral" title="电影院列表获取接口" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, lin zehao.
+
     </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2016, lin zehao.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
-      
-      |
-      <a href="_sources/price_list.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
+    </section>
 
-    
-  </body>
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
 </html>

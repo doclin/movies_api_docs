@@ -24,30 +24,31 @@
 ::
   [
     [
-        "meituan unknown error",
-        "taobao unknown error"
+    "meituan unknown error",
+    "taobao unknown error"
     ],
     {
-        "nuomi_now_price": "44",
-        "taobao_now_price": "",
-        "start_time": "10:00",
-        "end_time": "11:33",
-        "meituan_now_price": ""
+    "nuomi_now_price": "44",
+    "taobao_now_price": "",
+    "start_time": "10:00",
+    "end_time": "11:33",
+    "meituan_now_price": ""
     },
     {
-        "nuomi_now_price": "44",
-        "taobao_now_price": "",
-        "start_time": "11:00",
-        "end_time": "12:33",
-        "meituan_now_price": ""
+    "nuomi_now_price": "44",
+    "taobao_now_price": "",
+    "start_time": "11:00",
+    "end_time": "12:33",
+    "meituan_now_price": ""
     },
     {
-        "nuomi_now_price": "44",
-        "taobao_now_price": "",
-        "start_time": "11:45",
-        "end_time": "13:18",
-        "meituan_now_price": ""
-    },
+    "nuomi_now_price": "44",
+    "taobao_now_price": "",
+    "start_time": "11:45",
+    "end_time": "13:18",
+    "meituan_now_price": ""
+    }
+
   ]
 
 当各平台均正常时，首个异常反馈列表应为空

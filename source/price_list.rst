@@ -19,7 +19,7 @@ nuomi_movie_id          string      查询电影糯米ID
 nuomi_cinema_id         string      查询电影院糯米ID
 taobao_movie_id         string      查询电影淘宝ID
 taobao_cinema_id        string      查询电影院淘宝ID
-======================= =========== ================
+======================= ========== ==================
 
 查询成功响应信息
 
@@ -30,33 +30,34 @@ taobao_cinema_id        string      查询电影院淘宝ID
   [
     [],
     {
-        "nuomi_now_price": "44",
-        "taobao_now_price": "22",
-        "start_time": "10:00",
-        "end_time": "11:33",
-        "meituan_now_price": "33"
+    "nuomi_now_price": "44",
+    "taobao_now_price": "22",
+    "start_time": "10:00",
+    "end_time": "11:33",
+    "meituan_now_price": "33"
     },
     {
-        "nuomi_now_price": "44",
-        "taobao_now_price": "22",
-        "start_time": "11:00",
-        "end_time": "12:33",
-        "meituan_now_price": "33"
+    "nuomi_now_price": "44",
+    "taobao_now_price": "22",
+    "start_time": "11:00",
+    "end_time": "12:33",
+    "meituan_now_price": "33"
     },
     {
-        "nuomi_now_price": "44",
-        "taobao_now_price": "22",
-        "start_time": "11:45",
-        "end_time": "13:18",
-        "meituan_now_price": "33"
+    "nuomi_now_price": "44",
+    "taobao_now_price": "22",
+    "start_time": "11:45",
+    "end_time": "13:18",
+    "meituan_now_price": "33"
     },
     {
-        "nuomi_now_price": "44",
-        "taobao_now_price": "22",
-        "start_time": "12:45",
-        "end_time": "14:18",
-        "meituan_now_price": "33"
-    },
+    "nuomi_now_price": "44",
+    "taobao_now_price": "22",
+    "start_time": "12:45",
+    "end_time": "14:18",
+    "meituan_now_price": "33"
+    }
+    
   ]
   
 响应参数说明
@@ -79,23 +80,21 @@ taobao_now_price     string       淘宝现价
 
 ::
   {
-    "message": "Id dose not exist"
+  "message": "Id dose not exist"
   }
 
 2.请求参数格式错误
 
 ::
   {
-    "city_id": [
-        "invalid"
-    ]
+  "city_id": ["invalid"]
   }
 
 3.其他错误
 
 ::
   {
-    "message": "Unknown error"
+  "message": "Unknown error"
   }
 
 

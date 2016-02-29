@@ -30,125 +30,84 @@ taobao_district_id   string      查询行政区淘宝ID
   [
     [],
     {
-        "taobao_cinema_id": "",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "6136366",
-        "cinema_name": "CGV星聚汇影城光谷店"
+    "taobao_cinema_id": "",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "6136366",
+    "cinema_name": "CGV星聚汇影城光谷店"
     },
     {
-        "taobao_cinema_id": "",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "85361325",
-        "cinema_name": "博纳影城店"
+    "taobao_cinema_id": "",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "85361325",
+    "cinema_name": "博纳影城店"
     },
     {
-        "taobao_cinema_id": "29670",
-        "nuomi_cinema_id": "e3513addc51f7e803ce23137",
-        "meituan_cinema_id": "67477397",
-        "cinema_name": "东澜岸天河影城"
+    "taobao_cinema_id": "29670",
+    "nuomi_cinema_id": "e3513addc51f7e803ce23137",
+    "meituan_cinema_id": "67477397",
+    "cinema_name": "东澜岸天河影城"
     },
     {
-        "taobao_cinema_id": "18994",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "1474786",
-        "cinema_name": "光谷正华银兴影城"
+    "taobao_cinema_id": "18994",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "1474786",
+    "cinema_name": "光谷正华银兴影城"
     },
     {
-        "taobao_cinema_id": "5609",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "1476216",
-        "cinema_name": "洪山天河影城"
+    "taobao_cinema_id": "5609",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "1476216",
+    "cinema_name": "洪山天河影城"
     },
     {
-        "taobao_cinema_id": "13796",
-        "nuomi_cinema_id": "231375a34427680cf8dc85e2",
-        "meituan_cinema_id": "6928505",
-        "cinema_name": "华夏影城鲁广店"
+    "taobao_cinema_id": "13796",
+    "nuomi_cinema_id": "231375a34427680cf8dc85e2",
+    "meituan_cinema_id": "6928505",
+    "cinema_name": "华夏影城鲁广店"
     },
     {
-        "taobao_cinema_id": "7283",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "1439523",
-        "cinema_name": "华谊兄弟影院光谷店"
+    "taobao_cinema_id": "7283",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "1439523",
+    "cinema_name": "华谊兄弟影院光谷店"
     },
     {
-        "taobao_cinema_id": "9801",
-        "nuomi_cinema_id": "893a52349e89495788db73a6",
-        "meituan_cinema_id": "2410366",
-        "cinema_name": "巨幕影城光谷广场资本大厦店"
+    "taobao_cinema_id": "9801",
+    "nuomi_cinema_id": "893a52349e89495788db73a6",
+    "meituan_cinema_id": "2410366",
+    "cinema_name": "巨幕影城光谷广场资本大厦店"
     },
     {
-        "taobao_cinema_id": "25691",
-        "nuomi_cinema_id": "44c910d034e0e06ebea24038",
-        "meituan_cinema_id": "4629797",
-        "cinema_name": "天河欢乐汇影城"
+    "taobao_cinema_id": "25691",
+    "nuomi_cinema_id": "44c910d034e0e06ebea24038",
+    "meituan_cinema_id": "4629797",
+    "cinema_name": "天河欢乐汇影城"
     },
     {
-        "taobao_cinema_id": "",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "4267320",
-        "cinema_name": "幸福蓝海影城雄楚店"
+    "taobao_cinema_id": "",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "4267320",
+    "cinema_name": "幸福蓝海影城雄楚店"
     },
     {
-        "taobao_cinema_id": "21299",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "42024070",
-        "cinema_name": "银兴菲林影城佰港城店"
+    "taobao_cinema_id": "21299",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "42024070",
+    "cinema_name": "银兴菲林影城佰港城店"
     },
     {
-        "taobao_cinema_id": "7961",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "1439056",
-        "cinema_name": "中影影城光谷天河店"
+    "taobao_cinema_id": "7961",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "1439056",
+    "cinema_name": "中影影城光谷天河店"
     },
     {
-        "taobao_cinema_id": "28672",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "51041148",
-        "cinema_name": "耀莱成龙影城"
-    },
-    {
-        "taobao_cinema_id": "",
-        "nuomi_cinema_id": "d7fd2ad37c41834d0bccdd7a",
-        "meituan_cinema_id": "",
-        "cinema_name": "华幕电影城"
-    },
-    {
-        "taobao_cinema_id": "",
-        "nuomi_cinema_id": "dd33e6270b97e6464f6d46da",
-        "meituan_cinema_id": "",
-        "cinema_name": "慧分享保利心语店"
-    },
-    {
-        "taobao_cinema_id": "",
-        "nuomi_cinema_id": "6f49ee45188071f25fbe860a",
-        "meituan_cinema_id": "",
-        "cinema_name": "悠悠时光私人定制影院"
-    },
-    {
-        "taobao_cinema_id": "",
-        "nuomi_cinema_id": "253d0981919d4275c0364402",
-        "meituan_cinema_id": "",
-        "cinema_name": "爱幕影吧"
-    },
-    {
-        "taobao_cinema_id": "6201",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "",
-        "cinema_name": "金逸影城南湖店"
-    },
-    {
-        "taobao_cinema_id": "31357",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "",
-        "cinema_name": "博纳影城IMAX　"
-    },
-    {
-        "taobao_cinema_id": "8057",
-        "nuomi_cinema_id": "",
-        "meituan_cinema_id": "",
-        "cinema_name": "金逸影城销品茂IMAX店"
+    "taobao_cinema_id": "28672",
+    "nuomi_cinema_id": "",
+    "meituan_cinema_id": "51041148",
+    "cinema_name": "耀莱成龙影城"
     }
+
   ]
 
 响应参数说明
@@ -160,7 +119,7 @@ cinema_name           string      电影院名称
 meituan_cinema_id     string      查询影院美团ID
 nuomi_cinema_id       string      查询影院糯米ID
 taobao_cinema_id      string      查询影院淘宝ID
-===================== ========== ===================
+===================== =========== ==================
 
 查询失败响应
 
@@ -170,23 +129,21 @@ taobao_cinema_id      string      查询影院淘宝ID
 
 ::
   {
-    "message": "Id dose not exist"
+  "message": "Id dose not exist"
   }
 
 2.请求参数格式错误
 
 ::
   {
-    "city_id": [
-        "invalid"
-    ]
+  "city_id": ["invalid"]
   }
 
 3.其他错误
 
 ::
   {
-    "message": "Unknown error"
+  "message": "Unknown error"
   }
 
 
