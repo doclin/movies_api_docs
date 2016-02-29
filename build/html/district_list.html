@@ -139,10 +139,10 @@
 <h1>行政区列表获取接口<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>获取行政区列表<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>::</dt>
-<dd>GET /district/</dd>
-</dl>
+<p>URL:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET /district/
+</pre></div>
+</div>
 <p>请求参数说明</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -175,104 +175,97 @@
 </tr>
 </tbody>
 </table>
-<p>查询成功响应信息</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>Status: 200 OK</dd>
-</dl>
-<dl class="docutils">
-<dt>::</dt>
-<dd><dl class="first docutils">
-<dt>[</dt>
-<dd>[],
-{
-&#8220;district_name&#8221;: &#8220;江岸区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;江岸区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;3504-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;jiangqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;东西湖区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;东西湖区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;3908-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;dongxihuqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;洪山区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;洪山区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;3390-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;hongshanqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;汉阳区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;汉阳区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;3494-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;hanyangqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;武昌区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;武昌区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;3437-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;wuchangqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;硚口区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;硚口区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;3394-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;kouqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;江夏区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;江夏区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;6711-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;jiangxiaqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;江汉区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;江汉区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;3357-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;jianghanqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;黄陂区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;黄陂区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;huangpiqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;青山区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;青山区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;qingshanqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;蔡甸区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;蔡甸区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;6710-0&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;caidianqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;新洲区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;新洲区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;xinzhouqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;汉南区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;hannanqu&#8221;
-},
-{
-&#8220;district_name&#8221;: &#8220;经济技术开发区&#8221;,
-&#8220;taobao_district_id&#8221;: &#8220;经济技术开发区&#8221;,
-&#8220;nuomi_district_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_district_id&#8221;: &#8220;&#8221;
-}</dd>
-</dl>
-<p class="last">]</p>
-</dd>
-</dl>
+<p>查询成功响应信息:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Status: 200 OK
+[
+    [],
+    {
+    &quot;district_name&quot;: &quot;江岸区&quot;,
+    &quot;taobao_district_id&quot;: &quot;江岸区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;3504-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;jiangqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;东西湖区&quot;,
+    &quot;taobao_district_id&quot;: &quot;东西湖区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;3908-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;dongxihuqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;洪山区&quot;,
+    &quot;taobao_district_id&quot;: &quot;洪山区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;3390-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;hongshanqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;汉阳区&quot;,
+    &quot;taobao_district_id&quot;: &quot;汉阳区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;3494-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;hanyangqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;武昌区&quot;,
+    &quot;taobao_district_id&quot;: &quot;武昌区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;3437-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;wuchangqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;硚口区&quot;,
+    &quot;taobao_district_id&quot;: &quot;硚口区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;3394-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;kouqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;江夏区&quot;,
+    &quot;taobao_district_id&quot;: &quot;江夏区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;6711-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;jiangxiaqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;江汉区&quot;,
+    &quot;taobao_district_id&quot;: &quot;江汉区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;3357-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;jianghanqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;黄陂区&quot;,
+    &quot;taobao_district_id&quot;: &quot;黄陂区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;&quot;,
+    &quot;meituan_district_id&quot;: &quot;huangpiqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;青山区&quot;,
+    &quot;taobao_district_id&quot;: &quot;青山区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;&quot;,
+    &quot;meituan_district_id&quot;: &quot;qingshanqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;蔡甸区&quot;,
+    &quot;taobao_district_id&quot;: &quot;蔡甸区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;6710-0&quot;,
+    &quot;meituan_district_id&quot;: &quot;caidianqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;新洲区&quot;,
+    &quot;taobao_district_id&quot;: &quot;新洲区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;&quot;,
+    &quot;meituan_district_id&quot;: &quot;xinzhouqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;汉南区&quot;,
+    &quot;taobao_district_id&quot;: &quot;&quot;,
+    &quot;nuomi_district_id&quot;: &quot;&quot;,
+    &quot;meituan_district_id&quot;: &quot;hannanqu&quot;
+    },
+    {
+    &quot;district_name&quot;: &quot;经济技术开发区&quot;,
+    &quot;taobao_district_id&quot;: &quot;经济技术开发区&quot;,
+    &quot;nuomi_district_id&quot;: &quot;&quot;,
+    &quot;meituan_district_id&quot;: &quot;&quot;
+    }
+]
+</pre></div>
+</div>
 <p>响应参数说明</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -307,27 +300,24 @@
 </table>
 <p>查询失败响应</p>
 <p>以下所有错误响应的HTTP状态码均为400</p>
-<p>1.city_id格式正确但不存在该ID</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>{
-&#8220;message&#8221;: &#8220;Id dose not exist&#8221;
-}</dd>
-</dl>
-<p>2.请求参数格式错误</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>{
-&#8220;city_id&#8221;: [&#8220;invalid&#8221;]
-}</dd>
-</dl>
-<p>3.其他错误</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>{
-&#8220;message&#8221;: &#8220;Unknown error&#8221;
-}</dd>
-</dl>
+<p>1.city_id格式正确但不存在该ID:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Id dose not exist&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>2.请求参数格式错误:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;city_id&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;invalid&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>3.其他错误:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Unknown error&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

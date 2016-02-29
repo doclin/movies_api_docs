@@ -154,54 +154,48 @@
 <div class="section" id="id4">
 <h2>异常处理方法<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>因同时请求多家平台，而各平台状态不一致，采取特殊异常反馈方法
-从请求电影列表层开始，返回格式均为列表，其中所有返回列表的首个元素为异常反馈列表，例如：</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd><dl class="first docutils">
-<dt>[</dt>
-<dd>[
-&#8220;meituan unknown error&#8221;,
-&#8220;taobao unknown error&#8221;
-],
-{
-&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
-&#8220;taobao_now_price&#8221;: &#8220;&#8221;,
-&#8220;start_time&#8221;: &#8220;10:00&#8221;,
-&#8220;end_time&#8221;: &#8220;11:33&#8221;,
-&#8220;meituan_now_price&#8221;: &#8220;&#8221;
-},
-{
-&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
-&#8220;taobao_now_price&#8221;: &#8220;&#8221;,
-&#8220;start_time&#8221;: &#8220;11:00&#8221;,
-&#8220;end_time&#8221;: &#8220;12:33&#8221;,
-&#8220;meituan_now_price&#8221;: &#8220;&#8221;
-},
-{
-&#8220;nuomi_now_price&#8221;: &#8220;44&#8221;,
-&#8220;taobao_now_price&#8221;: &#8220;&#8221;,
-&#8220;start_time&#8221;: &#8220;11:45&#8221;,
-&#8220;end_time&#8221;: &#8220;13:18&#8221;,
-&#8220;meituan_now_price&#8221;: &#8220;&#8221;
-}</dd>
-</dl>
-<p class="last">]</p>
-</dd>
-</dl>
+从请求电影列表层开始，返回格式均为列表，其中所有返回列表的首个元素为异常反馈列表，例如:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span>
+    <span class="s2">&quot;meituan unknown error&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;taobao unknown error&quot;</span>
+    <span class="p">],</span>
+    <span class="p">{</span>
+    <span class="s2">&quot;nuomi_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;44&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;taobao_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;start_time&quot;</span><span class="p">:</span> <span class="s2">&quot;10:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;end_time&quot;</span><span class="p">:</span> <span class="s2">&quot;11:33&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;meituan_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+    <span class="s2">&quot;nuomi_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;44&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;taobao_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;start_time&quot;</span><span class="p">:</span> <span class="s2">&quot;11:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;end_time&quot;</span><span class="p">:</span> <span class="s2">&quot;12:33&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;meituan_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+    <span class="s2">&quot;nuomi_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;44&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;taobao_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;start_time&quot;</span><span class="p">:</span> <span class="s2">&quot;11:45&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;end_time&quot;</span><span class="p">:</span> <span class="s2">&quot;13:18&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;meituan_now_price&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 <p>当各平台均正常时，首个异常反馈列表应为空
 当出现异常时，列表中会出现报错信息：</p>
-<p>1.某平台连接失败</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>XXX connection broken</dd>
-</dl>
+<p>1.某平台连接失败:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>XXX connection broken
+</pre></div>
+</div>
 <p>如仅为单个平台异常，客户端可忽略该平台，并在客户端给出合适反馈即可
 当多个平台异常或某平台多次持续连接失败时，需及时反馈后台人员</p>
-<p>2.未知错误</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>XXX unknown error</dd>
-</dl>
+<p>2.未知错误:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>XXX unknown error
+</pre></div>
+</div>
 <p>当出现此异常时多为平台网站发生未知变化，需及时反馈后台人员</p>
 </div>
 </div>

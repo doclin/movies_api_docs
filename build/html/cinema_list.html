@@ -139,10 +139,10 @@
 <h1>电影院列表获取接口<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>获取电影院列表<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>::</dt>
-<dd>GET /cinema/</dd>
-</dl>
+<p>URL:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET /cinema/
+</pre></div>
+</div>
 <p>请求参数说明</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -187,98 +187,91 @@
 </tr>
 </tbody>
 </table>
-<p>查询成功响应信息</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>Status: 200 OK</dd>
-</dl>
-<dl class="docutils">
-<dt>::</dt>
-<dd><dl class="first docutils">
-<dt>[</dt>
-<dd>[],
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;6136366&#8221;,
-&#8220;cinema_name&#8221;: &#8220;CGV星聚汇影城光谷店&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;85361325&#8221;,
-&#8220;cinema_name&#8221;: &#8220;博纳影城店&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;29670&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;e3513addc51f7e803ce23137&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;67477397&#8221;,
-&#8220;cinema_name&#8221;: &#8220;东澜岸天河影城&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;18994&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;1474786&#8221;,
-&#8220;cinema_name&#8221;: &#8220;光谷正华银兴影城&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;5609&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;1476216&#8221;,
-&#8220;cinema_name&#8221;: &#8220;洪山天河影城&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;13796&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;231375a34427680cf8dc85e2&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;6928505&#8221;,
-&#8220;cinema_name&#8221;: &#8220;华夏影城鲁广店&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;7283&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;1439523&#8221;,
-&#8220;cinema_name&#8221;: &#8220;华谊兄弟影院光谷店&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;9801&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;893a52349e89495788db73a6&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;2410366&#8221;,
-&#8220;cinema_name&#8221;: &#8220;巨幕影城光谷广场资本大厦店&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;25691&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;44c910d034e0e06ebea24038&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;4629797&#8221;,
-&#8220;cinema_name&#8221;: &#8220;天河欢乐汇影城&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;4267320&#8221;,
-&#8220;cinema_name&#8221;: &#8220;幸福蓝海影城雄楚店&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;21299&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;42024070&#8221;,
-&#8220;cinema_name&#8221;: &#8220;银兴菲林影城佰港城店&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;7961&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;1439056&#8221;,
-&#8220;cinema_name&#8221;: &#8220;中影影城光谷天河店&#8221;
-},
-{
-&#8220;taobao_cinema_id&#8221;: &#8220;28672&#8221;,
-&#8220;nuomi_cinema_id&#8221;: &#8220;&#8221;,
-&#8220;meituan_cinema_id&#8221;: &#8220;51041148&#8221;,
-&#8220;cinema_name&#8221;: &#8220;耀莱成龙影城&#8221;
-}</dd>
-</dl>
-<p class="last">]</p>
-</dd>
-</dl>
+<p>查询成功响应信息:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Status: 200 OK
+[
+    [],
+    {
+    &quot;taobao_cinema_id&quot;: &quot;&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;6136366&quot;,
+    &quot;cinema_name&quot;: &quot;CGV星聚汇影城光谷店&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;85361325&quot;,
+    &quot;cinema_name&quot;: &quot;博纳影城店&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;29670&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;e3513addc51f7e803ce23137&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;67477397&quot;,
+    &quot;cinema_name&quot;: &quot;东澜岸天河影城&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;18994&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;1474786&quot;,
+    &quot;cinema_name&quot;: &quot;光谷正华银兴影城&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;5609&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;1476216&quot;,
+    &quot;cinema_name&quot;: &quot;洪山天河影城&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;13796&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;231375a34427680cf8dc85e2&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;6928505&quot;,
+    &quot;cinema_name&quot;: &quot;华夏影城鲁广店&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;7283&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;1439523&quot;,
+    &quot;cinema_name&quot;: &quot;华谊兄弟影院光谷店&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;9801&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;893a52349e89495788db73a6&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;2410366&quot;,
+    &quot;cinema_name&quot;: &quot;巨幕影城光谷广场资本大厦店&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;25691&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;44c910d034e0e06ebea24038&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;4629797&quot;,
+    &quot;cinema_name&quot;: &quot;天河欢乐汇影城&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;4267320&quot;,
+    &quot;cinema_name&quot;: &quot;幸福蓝海影城雄楚店&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;21299&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;42024070&quot;,
+    &quot;cinema_name&quot;: &quot;银兴菲林影城佰港城店&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;7961&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;1439056&quot;,
+    &quot;cinema_name&quot;: &quot;中影影城光谷天河店&quot;
+    },
+    {
+    &quot;taobao_cinema_id&quot;: &quot;28672&quot;,
+    &quot;nuomi_cinema_id&quot;: &quot;&quot;,
+    &quot;meituan_cinema_id&quot;: &quot;51041148&quot;,
+    &quot;cinema_name&quot;: &quot;耀莱成龙影城&quot;
+    }
+]
+</pre></div>
+</div>
 <p>响应参数说明</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -313,27 +306,24 @@
 </table>
 <p>查询失败响应</p>
 <p>以下HTTP状态码均应为400</p>
-<p>1.city_id格式正确但不存在该ID</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>{
-&#8220;message&#8221;: &#8220;Id dose not exist&#8221;
-}</dd>
-</dl>
-<p>2.请求参数格式错误</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>{
-&#8220;city_id&#8221;: [&#8220;invalid&#8221;]
-}</dd>
-</dl>
-<p>3.其他错误</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd>{
-&#8220;message&#8221;: &#8220;Unknown error&#8221;
-}</dd>
-</dl>
+<p>1.city_id格式正确但不存在该ID:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Id dose not exist&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>2.请求参数格式错误:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;city_id&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;invalid&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>3.其他错误:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Unknown error&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

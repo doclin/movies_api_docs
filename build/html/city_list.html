@@ -139,97 +139,95 @@
 <h1>城市列表获取接口<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>获取城市列表<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>::</dt>
-<dd>GET /city/</dd>
-</dl>
-<p>查询成功响应信息</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd><dl class="first docutils">
-<dt>[</dt>
-<dd>{
-&#8220;city_name&#8221;: &#8220;鞍山&#8221;,
-&#8220;city_id&#8221;: 2922,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;阿拉善盟&#8221;,
-&#8220;city_id&#8221;: 2923,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安庆&#8221;,
-&#8220;city_id&#8221;: 2924,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安阳&#8221;,
-&#8220;city_id&#8221;: 2925,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安顺&#8221;,
-&#8220;city_id&#8221;: 2926,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安康&#8221;,
-&#8220;city_id&#8221;: 2927,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;阿克苏&#8221;,
-&#8220;city_id&#8221;: 2928,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安吉&#8221;,
-&#8220;city_id&#8221;: 2929,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安丘&#8221;,
-&#8220;city_id&#8221;: 2930,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安岳&#8221;,
-&#8220;city_id&#8221;: 2931,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安平&#8221;,
-&#8220;city_id&#8221;: 2932,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安溪&#8221;,
-&#8220;city_id&#8221;: 2933,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-},
-{
-&#8220;city_name&#8221;: &#8220;安宁&#8221;,
-&#8220;city_id&#8221;: 2934,
-&#8220;first_char&#8221;: &#8220;A&#8221;,
-&#8220;hot_city&#8221;: 0
-}</dd>
-</dl>
-<p class="last">]</p>
-</dd>
-</dl>
+<p>URL:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>GET /city/
+</pre></div>
+</div>
+<p>查询成功响应信息:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Status:200 OK
+
+[
+        {
+        &quot;city_name&quot;: &quot;鞍山&quot;,
+        &quot;city_id&quot;: 2922,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;阿拉善盟&quot;,
+        &quot;city_id&quot;: 2923,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安庆&quot;,
+        &quot;city_id&quot;: 2924,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安阳&quot;,
+        &quot;city_id&quot;: 2925,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安顺&quot;,
+        &quot;city_id&quot;: 2926,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安康&quot;,
+        &quot;city_id&quot;: 2927,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;阿克苏&quot;,
+        &quot;city_id&quot;: 2928,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安吉&quot;,
+        &quot;city_id&quot;: 2929,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安丘&quot;,
+        &quot;city_id&quot;: 2930,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安岳&quot;,
+        &quot;city_id&quot;: 2931,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安平&quot;,
+        &quot;city_id&quot;: 2932,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安溪&quot;,
+        &quot;city_id&quot;: 2933,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        },
+        {
+        &quot;city_name&quot;: &quot;安宁&quot;,
+        &quot;city_id&quot;: 2934,
+        &quot;first_char&quot;: &quot;A&quot;,
+        &quot;hot_city&quot;: 0
+        }
+]
+</pre></div>
+</div>
 <p>总计800余城市，在此略去</p>
 <p>响应参数说明</p>
 <table border="1" class="docutils">

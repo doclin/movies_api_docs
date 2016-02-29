@@ -19,53 +19,50 @@
 异常处理方法
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 因同时请求多家平台，而各平台状态不一致，采取特殊异常反馈方法
-从请求电影列表层开始，返回格式均为列表，其中所有返回列表的首个元素为异常反馈列表，例如：
+从请求电影列表层开始，返回格式均为列表，其中所有返回列表的首个元素为异常反馈列表，例如::
 
-::
-  [
+
     [
-    "meituan unknown error",
-    "taobao unknown error"
-    ],
-    {
-    "nuomi_now_price": "44",
-    "taobao_now_price": "",
-    "start_time": "10:00",
-    "end_time": "11:33",
-    "meituan_now_price": ""
-    },
-    {
-    "nuomi_now_price": "44",
-    "taobao_now_price": "",
-    "start_time": "11:00",
-    "end_time": "12:33",
-    "meituan_now_price": ""
-    },
-    {
-    "nuomi_now_price": "44",
-    "taobao_now_price": "",
-    "start_time": "11:45",
-    "end_time": "13:18",
-    "meituan_now_price": ""
-    }
-
-  ]
+        [
+        "meituan unknown error",
+        "taobao unknown error"
+        ],
+        {
+        "nuomi_now_price": "44",
+        "taobao_now_price": "",
+        "start_time": "10:00",
+        "end_time": "11:33",
+        "meituan_now_price": ""
+        },
+        {
+        "nuomi_now_price": "44",
+        "taobao_now_price": "",
+        "start_time": "11:00",
+        "end_time": "12:33",
+        "meituan_now_price": ""
+        },
+        {
+        "nuomi_now_price": "44",
+        "taobao_now_price": "",
+        "start_time": "11:45",
+        "end_time": "13:18",
+        "meituan_now_price": ""
+        }
+    ]
 
 当各平台均正常时，首个异常反馈列表应为空
 当出现异常时，列表中会出现报错信息：
 
-1.某平台连接失败
+1.某平台连接失败::
 
-::
-  XXX connection broken
+    XXX connection broken
 
 如仅为单个平台异常，客户端可忽略该平台，并在客户端给出合适反馈即可
 当多个平台异常或某平台多次持续连接失败时，需及时反馈后台人员
 
-2.未知错误
+2.未知错误::
 
-::
-  XXX unknown error
+    XXX unknown error
 
 当出现此异常时多为平台网站发生未知变化，需及时反馈后台人员
 

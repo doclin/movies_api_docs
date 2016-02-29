@@ -10,10 +10,15 @@ Contents:
    :maxdepth: 2
    
    basic
+
    city_list
+
    movie_list
+
    district_list
+
    cinema_list
+   
    price_list
 
 
